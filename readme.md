@@ -6,7 +6,9 @@ The Survser NPM package seamlessly integrates the Survser JavaScript client into
 
 ## Installation
 
-`npm install survser-js`
+```bash
+npm install survser-js
+```
 
 ## Usage
 
@@ -21,4 +23,16 @@ if (typeof window !== "undefined") {
 export default function Example() {
   return <div></div>;
 }
+```
+
+## Identifying Users
+
+If you want to identify your users in order to attribute survey responses to them, you can do so. Make sure to include a unique user identifier in the `id` field.
+
+```js
+_survser("identifyUser", {
+  id: "123456",
+  email: "julia@celebrity.com",
+  name: "Julia Roberts",
+});
 ```
