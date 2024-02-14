@@ -1,0 +1,21 @@
+{
+  "name": "survser-js",
+  "version": "1.0.0",
+  "description": "Official NPM wrapper of Survser JavaScript client",
+  "main": "main.js",
+  "homepage": "https://survser.com/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/refiner-io/js-client-npm.git"
+  },
+  "keywords": [
+    "microsurvey",
+    "survser",
+    "survey",
+    "feedback"
+  ],
+  "bugs": "https://github.com/refiner-io/js-client-npm/issues",
+  "author": "Refiner <contact@refiner.io> (https://refiner.io)",
+  "license": "MIT",
+  "private": false
+}
