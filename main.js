@@ -1,12 +1,15 @@
-"use strict";
-
 let scriptReady = false;
 
 function loadSurvser() {
   scriptReady = true;
   new Promise(function (resolve, reject) {
+    if (typeof document === "undefined") {
+      // We're not in a browser environment, so just return
+      return;
+    }
+
     const scriptTag = document.createElement("script");
-    scriptTag.src = "https://js.refiner.io/v001/client.js";
+    scriptTag.src = "https://survser.com/embed.min.js";
 
     scriptTag.onload = function () {
       resolve();
@@ -20,12 +23,21 @@ function loadSurvser() {
   });
 }
 
-window.survserQueue = window.survserQueue || [];
-window._survser = function () {
-  if (!scriptReady) {
-    loadRefinerClient();
+function _survser() {
+  if (typeof window === "undefined") {
+    // We're not in a browser environment, so just return
+    return;
   }
-  survserQueue.push(arguments);
-};
 
-module.exports = window._survser;
+  if (!scriptReady) {
+    loadSurvser();
+  }
+
+  if (!window.survserQueue) {
+    window.survserQueue = [];
+  }
+
+  window.survserQueue.push(arguments);
+}
+
+module.exports = _survser;
