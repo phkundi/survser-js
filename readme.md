@@ -11,14 +11,14 @@ The Survser NPM package seamlessly integrates the Survser JavaScript client into
 ## Usage
 
 ```js
-import \_survser from "survser-js";
+import _survser from "survser-js";
 
 if (typeof window !== "undefined") {
-\_survser("setProject", "project_id");
-\_survser("setAPIKey", "api_key");
+  _survser("setProject", "project_id");
+  _survser("setAPIKey", "api_key");
 }
 
 export default function Example() {
-return <div></div>
+  return <div></div>;
 }
 ```
