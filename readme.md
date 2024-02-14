@@ -10,7 +10,7 @@ The Survser NPM package seamlessly integrates the Survser JavaScript client into
 
 ## Usage
 
-js```
+```js
 import \_survser from "survser-js";
 
 if (typeof window !== "undefined") {
@@ -21,7 +21,4 @@ if (typeof window !== "undefined") {
 export default function Example() {
 return <div></div>
 }
-
-```
-
 ```
