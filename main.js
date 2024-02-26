@@ -1,7 +1,6 @@
 let scriptReady = false;
 
-// const baseUrl = "https://survser.com";
-const baseUrl = "http://localhost:3000";
+const baseUrl = "https://survser.com";
 
 function loadSurvser() {
   scriptReady = true;
