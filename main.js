@@ -1,5 +1,8 @@
 let scriptReady = false;
 
+// const baseUrl = "https://survser.com";
+const baseUrl = "http://localhost:3000";
+
 function loadSurvser() {
   scriptReady = true;
   new Promise(function (resolve, reject) {
@@ -9,7 +12,7 @@ function loadSurvser() {
     }
 
     const scriptTag = document.createElement("script");
-    scriptTag.src = "https://survser.com/embed.min.js";
+    scriptTag.src = `${baseUrl}/embed.min.js`;
 
     scriptTag.onload = function () {
       resolve();
@@ -40,4 +43,4 @@ function _survser() {
   window.survserQueue.push(arguments);
 }
 
-module.exports = _survser;
+export default _survser;
