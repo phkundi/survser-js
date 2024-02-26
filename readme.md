@@ -12,6 +12,8 @@ npm install survser-js
 
 ## Usage
 
+Exact implementation might depend on the specific framework you are using. Refer to our examples or our [documentation](https://docs.survser.com) for more information.
+
 ```js
 import _survser from "survser-js";
 
