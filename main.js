@@ -40,4 +40,4 @@ function _survser() {
   window.survserQueue.push(arguments);
 }
 
-module.exports = _survser;
+export default _survser;
