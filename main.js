@@ -1,6 +1,6 @@
 let scriptReady = false;
 
-const baseUrl = "https://survser.com";
+const baseUrl = "https://www.survser.com";
 
 function loadSurvser() {
   scriptReady = true;
