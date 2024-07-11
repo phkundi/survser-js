@@ -1,9 +1,9 @@
 {
   "name": "survser-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "NPM wrapper of Survser JavaScript client",
   "main": "main.js",
-  "homepage": "https://survser.com/",
+  "homepage": "https://www.survser.com/",
   "repository": {
     "type": "git",
     "url": "git://github.com/Survser/survser-js.git"
@@ -15,7 +15,7 @@
     "feedback"
   ],
   "bugs": "https://github.com/Survser/survser-js.git/issues",
-  "author": "Survser <hello@survser.com> (https://survser.com)",
+  "author": "Survser <hello@survser.com> (https://www.survser.com)",
   "license": "MIT",
   "private": false
 }
